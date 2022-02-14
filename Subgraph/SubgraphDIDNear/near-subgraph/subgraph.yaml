@@ -1,0 +1,20 @@
+specVersion: 0.0.4
+description: DID registry # the name of the subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: near
+    name: receipts # could also be blocks
+    network: near-mainnet # can choose near-mainnet or near-testnet
+    source:
+      account: abhijeet.near # contract account you want to pull data from
+      startBlock: 54167320 # starting block on near-mainnet for indexing
+    mapping:
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ./src/mapping.ts
+      entities:
+        - Account # the example entity in the schema.graphql file
+        - Log # example log entity in the schema.graphql file
+      receiptHandlers:
+        - handler: handleReceipt # name of the receipt handler
