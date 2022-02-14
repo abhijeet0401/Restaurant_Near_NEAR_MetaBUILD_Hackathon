@@ -16,7 +16,7 @@ Acceptance of credit card payments generates vulnerability  for sellers for char
 While Paying a vendor with plastic or digital money such as credit-card, fiat payment gateways these means stores the user sensitive information which can be used to access funds even if the payment is not recurring. This makes users extremely vulnerable as in case of a data leak, their finances will be at risk. With Restaurant Near , only their public wallet address is stored, which cannot be used to access funds.
 ## SPONSOR CHALLENGES
 
-##The GRAPH
+## The GRAPH
 
 <img src='./screenshot/graph.jpg' />
 
